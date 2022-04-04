@@ -275,7 +275,6 @@ void GamePlay::draw()
         SlapMachine{GetMousePosition() - Vector2{150, 150}, m_txtrs[SLAPMACHINE1TXTR], m_txtrs[SLAPMACHINE2TXTR]}.draw();
     if (m_dragMode == 3)
         DrawTexture(m_txtrs[BOMB1TXTR], GetMousePosition().x - 150, GetMousePosition().y - 150, WHITE);
-    DrawText(std::to_string(m_gameTime).c_str(), 10, 140, 20, GREEN);
 }
 
 void GamePlay::buyAlly( int mode )
